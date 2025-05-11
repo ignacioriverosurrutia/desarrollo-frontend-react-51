@@ -1,0 +1,52 @@
+/* Estilo general del pie de página */
+.footer {
+  background-color: #343a40; /* Color oscuro */
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Estilo para los íconos de redes sociales */
+.footer .social-icons a {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #007bff; /* Azul primario */
+}
+
+/* Estilo para el texto */
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Línea divisoria */
+.footer hr {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin: 1rem 0;
+}
+```
+import React, { useEffect } from 'react';
+import Footer from './components/Footer';
+import './components/footer.css';
+
+function App() {
+  useEffect(() => {
+    /* Add Font Awesome link in the React component */
+    const fontAwesomeLink = document.createElement('link');
+    fontAwesomeLink.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
+    fontAwesomeLink.rel = "stylesheet";
+    document.head.appendChild(fontAwesomeLink);
+  }, []);
+
+  return (
+    <div>
+      {/* Otros componentes */}
+      <Footer />
+    </div>
+  );
+}

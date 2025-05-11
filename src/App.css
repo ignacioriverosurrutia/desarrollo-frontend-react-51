@@ -1,3 +1,4 @@
+/* Estilos globales */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,19 +6,31 @@
   text-align: center;
 }
 
+/* Estilos Globales */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para logos */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Animación para logos */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -33,10 +46,112 @@
   }
 }
 
+/* Estilos para tarjetas */
 .card {
   padding: 2em;
 }
 
+/* Estilos para enlaces de documentación */
 .read-the-docs {
   color: #888;
+}
+
+/* Estilos para la sección Hero */
+.hero-section {
+  background-color: #007bff;
+  color: white;
+  padding: 50px 0;
+}
+
+.hero-section.dark-mode {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.hero-section.text-dark {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.hero-section button {
+  margin-top: 10px;
+}
+
+/* Estilos para botones */
+button {
+  margin-top: 10px;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+/* Estilos para el indicador de desplazamiento */
+.scroll-indicator {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  transition: color 0.3s ease;
+}
+
+.scroll-indicator.scrolled {
+  color: red;
+}
+
+.scroll-indicator:not(.scrolled) {
+  color: black;
+}
+
+/* Estilos para campos de formulario */
+.form-control-focus:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Estilo para el pie de página */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1.5rem 0;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #0056b3;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
 }

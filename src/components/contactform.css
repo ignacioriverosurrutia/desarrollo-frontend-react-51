@@ -1,0 +1,66 @@
+/* Removed invalid import statement */
+
+/* Estilo general para la sección del formulario */
+#contacto {
+  padding: 2rem;
+  background-color: #007bff; /* Azul primario */
+  color: white;
+  border-radius: 8px;
+}
+
+/* Estilo para el título */
+#contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Estilo para los campos del formulario */
+#contacto .form-control {
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+/* Estilo para los mensajes de error */
+#contacto .form-control.is-invalid {
+  border-color: #dc3545; /* Rojo para errores */
+}
+
+#contacto .form-control.is-invalid:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+#contacto .invalid-feedback {
+  color: #f8d7da;
+  font-size: 0.875rem;
+}
+
+/* Estilo para el botón de envío */
+#contacto button[type="submit"] {
+  background-color: white;
+  color: #007bff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#contacto button[type="submit"]:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Estilo para el mensaje de éxito */
+#contacto .alert-success {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
