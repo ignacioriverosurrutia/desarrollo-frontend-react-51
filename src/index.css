@@ -54,6 +54,18 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Estilo básico para el formulario */
+.form-control {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Botón con un color de fondo */
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

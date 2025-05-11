@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import Formulario from './Formulario';
 
 function Home() {
   return (
@@ -53,6 +54,13 @@ function Home() {
               </Card>
             </Col>
           </Row>
+        </Container>
+      </section>
+
+      <section id="formulario" className="py-5">
+        <Container>
+          <h2 className="text-center mb-4">Contáctanos</h2>
+          <Formulario />
         </Container>
       </section>
     </div>

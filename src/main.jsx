@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importación de Bootstrap
 import { Card } from 'react-bootstrap'; // Importación de componentes de Bootstrap
+import './index.css'; // Importamos los estilos globales
+import App from './App.jsx'; // Importamos el componente principal de la aplicación
 
 // Función que maneja el evento onFocus
 function handleFocus() {
@@ -33,12 +35,13 @@ function App() {
   );
 }
 
-// Crear el root para renderizar la aplicación
+// Verificamos si el elemento root existe en el DOM
 const rootElement = document.getElementById('root');
 if (!rootElement) {
   console.error("El contenedor 'root' no se encuentra en el HTML.");
 } else {
   const root = ReactDOM.createRoot(rootElement);
+
   root.render(
     <React.StrictMode>
       <App />
