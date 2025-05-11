@@ -1,0 +1,50 @@
+/* Estilos generales para la barra de navegación */
+.navbar {
+  border-bottom: 2px solid #007bff; /* Línea azul para dar énfasis */
+}
+
+/* Personalización de los enlaces en el Navbar */
+.nav-link {
+  color: #333 !important; /* Color de los enlaces en color gris oscuro */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase; /* Mayúsculas para los enlaces */
+  padding: 10px 15px;
+}
+
+.nav-link:hover {
+  color: #0056b3; /* Color azul al pasar el ratón */
+  transition: color 0.3s ease;
+}
+
+/* Botón "Contáctanos" */
+button.ms-2 {
+  background-color: #007bff; /* Azul institucional */
+  border: 1px solid #007bff;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+button.ms-2:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el ratón */
+  border-color: #0056b3;
+}
+
+/* Ajustes para la visualización en dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #f8f9fa; /* Fondo blanco en móviles para dar contraste */
+  }
+
+  .navbar-toggler {
+    border-color: #007bff; /* Color de la hamburguesa */
+  }
+
+  .navbar-collapse {
+    text-align: center; /* Centrar el texto en el menú desplegable */
+  }
+
+  .navbar-nav {
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,75 @@
+/* Estilo para la sección Hero */
+.hero-section {
+  background-image: url('/assets/images/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.hero-section p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Estilo para las tarjetas de servicios */
+.card {
+  border-radius: 0.5rem;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efecto de hover para hacer las tarjetas más interactivas */
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  color: #555;
+}
+
+button {
+  background-color: #007bff; /* Azul institucional */
+  border-color: #007bff;
+  color: white;
+  border-radius: 0.25rem;
+}
+
+button:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+  border-color: #004085;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    margin-bottom: 15px;
+  }
+}

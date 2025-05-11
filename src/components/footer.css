@@ -1,52 +1,40 @@
-/* Estilo general del pie de página */
-.footer {
-  background-color: #343a40; /* Color oscuro */
-  color: white;
-  padding: 2rem 0;
+/* Estilos para el Pie de Página */
+footer {
+  background-color: #343a40; /* Gris oscuro para el fondo del footer */
+  color: #ffffff; /* Color de texto blanco para contraste */
   text-align: center;
+  padding: 30px 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
-/* Estilo para los íconos de redes sociales */
-.footer .social-icons a {
-  font-size: 1.5rem;
-  margin: 0 0.5rem;
-  color: white;
+/* Enlaces dentro del pie de página */
+footer a {
+  color: #ffffff; /* Color blanco para los enlaces */
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.footer .social-icons a:hover {
-  color: #007bff; /* Azul primario */
+/* Efecto de hover sobre los enlaces */
+footer a:hover {
+  color: #1e90ff; /* Azul claro para los enlaces al pasar el ratón */
 }
 
-/* Estilo para el texto */
-.footer p {
+/* Estilo para el texto dentro del pie de página */
+footer p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
 }
 
-/* Línea divisoria */
-.footer hr {
-  border-color: rgba(255, 255, 255, 0.2);
-  margin: 1rem 0;
-}
-```
-import React, { useEffect } from 'react';
-import Footer from './components/Footer';
-import './components/footer.css';
-
-function App() {
-  useEffect(() => {
-    /* Add Font Awesome link in the React component */
-    const fontAwesomeLink = document.createElement('link');
-    fontAwesomeLink.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
-    fontAwesomeLink.rel = "stylesheet";
-    document.head.appendChild(fontAwesomeLink);
-  }, []);
-
-  return (
-    <div>
-      {/* Otros componentes */}
-      <Footer />
-    </div>
-  );
+/* Adaptabilidad para dispositivos móviles */
+@media (max-width: 576px) {
+  footer {
+    padding: 20px 10px; /* Reducir el espaciado en pantallas pequeñas */
+  }
+  
+  footer p {
+    font-size: 12px; /* Ajustar el tamaño de la fuente en móviles */
+  }
 }
